@@ -1,5 +1,5 @@
 {
   "name": "Aura Decor",
-  "description": "Premium minimalist interior design platform with style simulation, furniture catalog, and dynamic budget tracking.",
-  "requestFramePermissions": []
+  "description": "Premium minimalist interior design platform with AI-powered room decoration, style simulation, and project management.",
+  "requestFramePermissions": ["camera"]
 }

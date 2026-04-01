@@ -32,19 +32,36 @@
 
 @layer base {
   body {
-    @apply bg-neutral-50 text-neutral-900 font-sans antialiased;
+    @apply bg-[#F9F8F6] text-neutral-900 font-sans antialiased transition-colors duration-500;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif;
+    @apply font-serif tracking-tight;
+  }
+
+  ::selection {
+    @apply bg-sage-100 text-sage-900;
   }
 }
 
 .glass {
-  @apply bg-white/70 backdrop-blur-md border border-white/20;
+  @apply bg-white/70 backdrop-blur-2xl border border-white/40 shadow-[0_8px_32px_rgba(0,0,0,0.04)];
 }
 
 .serif-italic {
   font-family: "Cormorant Garamond", serif;
   font-style: italic;
+  letter-spacing: -0.01em;
+}
+
+.markdown-body p {
+  @apply mb-2 last:mb-0;
+}
+
+.markdown-body ul, .markdown-body ol {
+  @apply mb-2 ml-4 list-disc;
+}
+
+.markdown-body strong {
+  @apply font-bold;
 }
